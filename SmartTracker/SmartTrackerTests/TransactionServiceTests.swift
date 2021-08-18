@@ -35,19 +35,18 @@ class SmartTrackerTests: XCTestCase {
         var newTransaction: Transaction?
         
         transaction.id = UUID()
-        transaction.title = "Donation"
-        transaction.category = Category.donation(budget: 100).id
+        transaction.title = DONATION
+        transaction.category = Category.donation(budget: BUDGET_DONATION).id
         transaction.amount = NSDecimalNumber(value: 40.00)
-        transaction.currency = "USD"
+        transaction.currency = CURRENCY_USD
         transaction.occuredOn = date
         
         // When
-        transactionInteractor.update(transaction: transaction)
+        transactionInteractor.upsert(transaction: transaction)
         
         newTransaction = try wait(for: dataProvier.transactionDataPublisher).first
         
         // Then
-        XCTAssertNil(error)
         XCTAssertNotNil(newTransaction, "Transaction should not be nil")
         XCTAssertNotNil(newTransaction?.id, "Transaction Id should not be nil")
         XCTAssertEqual(newTransaction?.title, "Donation")

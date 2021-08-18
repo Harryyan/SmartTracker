@@ -17,7 +17,7 @@ protocol DataProvider: AnyObject {
     
     var currencyRate: Double { get set }
     
-    func update(transaction: Transaction)
+    func upsert(transaction: Transaction)
     func delete(transaction: Transaction)
     func sumOfExpense(of category: String, at rate: Double) -> Double
     
@@ -34,7 +34,7 @@ protocol TransactionProvider: AnyObject {
     var transactionPublisher: Published<[Transaction]>.Publisher { get }
     
     func loadAllTransactions()
-    func save(transaction: Transaction)
+    func upsert(transaction: Transaction)
     func delete(transaction: Transaction)
     
     func loadCurrentMonthTransactions(for category: String) -> [Transaction]

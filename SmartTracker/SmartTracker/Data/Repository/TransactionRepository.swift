@@ -52,7 +52,7 @@ final class TransactionRepository: TransactionProvider {
         }
     }
     
-    func save(transaction: Transaction) {
+    func upsert(transaction: Transaction) {
         do {
             try self.managedObjectContext.save()
         } catch let error as NSError {

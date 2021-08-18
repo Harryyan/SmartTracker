@@ -49,8 +49,8 @@ final class DataLayer: DataProvider {
     
     // MARK: - Internal
     
-    func update(transaction: Transaction) {
-        transactionRepository.save(transaction: transaction)
+    func upsert(transaction: Transaction) {
+        transactionRepository.upsert(transaction: transaction)
     }
     
     func delete(transaction: Transaction) {

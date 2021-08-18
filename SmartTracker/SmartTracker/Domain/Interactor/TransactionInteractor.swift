@@ -14,8 +14,8 @@ final class TransactionInteractor {
         self.dataProvider = dataProvider
     }
     
-    func update(transaction: Transaction) {
-        dataProvider.update(transaction: transaction)
+    func upsert(transaction: Transaction) {
+        dataProvider.upsert(transaction: transaction)
     }
     
     func delete(transaction: Transaction) {

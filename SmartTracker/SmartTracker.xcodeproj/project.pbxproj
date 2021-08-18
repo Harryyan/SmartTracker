@@ -160,10 +160,10 @@
 		1204ED7D26CC99FA0085DE15 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1204ED7E26CC9A1F0085DE15 /* Database */,
 				1204EDAB26CCEED60085DE15 /* Utility */,
 				1204EDA426CCEC220085DE15 /* Helper */,
 				1204EDA326CCEC160085DE15 /* Repository */,
-				1204ED7E26CC9A1F0085DE15 /* Database */,
 				1204EDA526CCEC310085DE15 /* DataLayer.swift */,
 			);
 			path = Data;

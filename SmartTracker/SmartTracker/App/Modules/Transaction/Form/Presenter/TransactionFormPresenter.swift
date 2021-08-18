@@ -45,6 +45,6 @@ final class TransactionFormPresenter: ObservableObject {
         transactionLog.category = transactionViewModel.categoryName
         transactionLog.occuredOn = transactionViewModel.occuredOn
         
-        interactor.update(transaction: transactionLog)
+        interactor.upsert(transaction: transactionLog)
     }
 }
