@@ -27,7 +27,7 @@ protocol DataProvider: AnyObject {
 protocol CategoryProvider: AnyObject {
     var categoryExpensePublisher: Published<[CategoryExpense]>.Publisher { get }
     
-    func loadCategorySums()
+    func loadCategoryExpenses()
 }
 
 protocol TransactionProvider: AnyObject {

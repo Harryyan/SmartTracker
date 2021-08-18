@@ -9,10 +9,10 @@ import Foundation
 import SwiftUI
 
 struct CategoryExpense: Identifiable {
-    var expenseInToal: Double
+    var expenseInTotal: Double
     let category: Category
     
-    var id: String { "\(category)\(expenseInToal)" }
+    var id: String { "\(category)\(expenseInTotal)" }
 }
 
 enum Category: Identifiable {

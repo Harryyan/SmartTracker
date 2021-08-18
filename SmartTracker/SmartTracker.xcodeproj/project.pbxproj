@@ -19,6 +19,10 @@
 		1204ED9B26CCEA7C0085DE15 /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9A26CCEA7C0085DE15 /* DataProviders.swift */; };
 		1204ED9D26CCEB2E0085DE15 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */; };
 		1204EDA226CCEBCA0085DE15 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA126CCEBCA0085DE15 /* TransactionViewModel.swift */; };
+		1204EDA626CCEC310085DE15 /* DataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA526CCEC310085DE15 /* DataLayer.swift */; };
+		1204EDA826CCEC410085DE15 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA726CCEC410085DE15 /* CategoryRepository.swift */; };
+		1204EDAA26CCEC5A0085DE15 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA926CCEC5A0085DE15 /* TransactionRepository.swift */; };
+		1204EDAD26CCEEEC0085DE15 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDAC26CCEEEC0085DE15 /* DateExtension.swift */; };
 		124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488D26CBB33E003770BC /* SmartTrackerApp.swift */; };
 		124F489226CBB33F003770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489126CBB33F003770BC /* Assets.xcassets */; };
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
@@ -57,6 +61,10 @@
 		1204ED9A26CCEA7C0085DE15 /* DataProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
 		1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
 		1204EDA126CCEBCA0085DE15 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		1204EDA526CCEC310085DE15 /* DataLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayer.swift; sourceTree = "<group>"; };
+		1204EDA726CCEC410085DE15 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		1204EDA926CCEC5A0085DE15 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
+		1204EDAC26CCEEEC0085DE15 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		124F488A26CBB33E003770BC /* SmartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F488D26CBB33E003770BC /* SmartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerApp.swift; sourceTree = "<group>"; };
 		124F489126CBB33F003770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,8 +124,11 @@
 		1204ED7D26CC99FA0085DE15 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				1204EDAB26CCEED60085DE15 /* Utility */,
+				1204EDA426CCEC220085DE15 /* Helper */,
+				1204EDA326CCEC160085DE15 /* Repository */,
 				1204ED7E26CC9A1F0085DE15 /* Database */,
-				124F489626CBB33F003770BC /* Persistence.swift */,
+				1204EDA526CCEC310085DE15 /* DataLayer.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -230,6 +241,31 @@
 				1204EDA126CCEBCA0085DE15 /* TransactionViewModel.swift */,
 			);
 			path = Viewmodel;
+			sourceTree = "<group>";
+		};
+		1204EDA326CCEC160085DE15 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDA726CCEC410085DE15 /* CategoryRepository.swift */,
+				1204EDA926CCEC5A0085DE15 /* TransactionRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1204EDA426CCEC220085DE15 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				124F489626CBB33F003770BC /* Persistence.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1204EDAB26CCEED60085DE15 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDAC26CCEEEC0085DE15 /* DateExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		124F488126CBB33E003770BC = {
@@ -411,17 +447,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1204ED9526CCE9F10085DE15 /* CategoryListPresenter.swift in Sources */,
+				1204EDA626CCEC310085DE15 /* DataLayer.swift in Sources */,
 				124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */,
 				1204ED8626CC9EE10085DE15 /* Category.swift in Sources */,
 				1204ED9126CCE96E0085DE15 /* CategoryRow.swift in Sources */,
+				1204EDAD26CCEEEC0085DE15 /* DateExtension.swift in Sources */,
 				1204ED8826CCE8F30085DE15 /* RootView.swift in Sources */,
 				1204ED9726CCEA2A0085DE15 /* CategoryListInteractor.swift in Sources */,
 				124F489726CBB33F003770BC /* Persistence.swift in Sources */,
 				1204ED9926CCEA560085DE15 /* TransactionInteractor.swift in Sources */,
 				124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */,
+				1204EDA826CCEC410085DE15 /* CategoryRepository.swift in Sources */,
 				1204ED9326CCE9830085DE15 /* CategoryImageView.swift in Sources */,
 				1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */,
 				1204ED8F26CCE95C0085DE15 /* CategoryTabView.swift in Sources */,
+				1204EDAA26CCEC5A0085DE15 /* TransactionRepository.swift in Sources */,
 				1204ED9B26CCEA7C0085DE15 /* DataProviders.swift in Sources */,
 				1204ED9D26CCEB2E0085DE15 /* CurrencyResponse.swift in Sources */,
 				1204EDA226CCEBCA0085DE15 /* TransactionViewModel.swift in Sources */,
