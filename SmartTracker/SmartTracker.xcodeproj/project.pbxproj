@@ -50,18 +50,11 @@
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
 		124F489726CBB33F003770BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F489626CBB33F003770BC /* Persistence.swift */; };
 		124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 124F489826CBB33F003770BC /* SmartTracker.xcdatamodeld */; };
-		124F48A426CBB33F003770BC /* SmartTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F48A326CBB33F003770BC /* SmartTrackerTests.swift */; };
+		124F48A426CBB33F003770BC /* TransactionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F48A326CBB33F003770BC /* TransactionServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		124F48A026CBB33F003770BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 124F488226CBB33E003770BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 124F488926CBB33E003770BC;
-			remoteInfo = SmartTracker;
-		};
-		124F48AA26CBB33F003770BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 124F488226CBB33E003770BC /* Project object */;
 			proxyType = 1;
@@ -117,8 +110,7 @@
 		124F489626CBB33F003770BC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		124F489926CBB33F003770BC /* SmartTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartTracker.xcdatamodel; sourceTree = "<group>"; };
 		124F489F26CBB33F003770BC /* SmartTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		124F48A326CBB33F003770BC /* SmartTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerTests.swift; sourceTree = "<group>"; };
-		124F48A926CBB33F003770BC /* SmartTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		124F48A326CBB33F003770BC /* TransactionServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,13 +122,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		124F489C26CBB33F003770BC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		124F48A626CBB33F003770BC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -413,7 +398,6 @@
 			children = (
 				124F488A26CBB33E003770BC /* SmartTracker.app */,
 				124F489F26CBB33F003770BC /* SmartTrackerTests.xctest */,
-				124F48A926CBB33F003770BC /* SmartTrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -443,7 +427,7 @@
 		124F48A226CBB33F003770BC /* SmartTrackerTests */ = {
 			isa = PBXGroup;
 			children = (
-				124F48A326CBB33F003770BC /* SmartTrackerTests.swift */,
+				124F48A326CBB33F003770BC /* TransactionServiceTests.swift */,
 			);
 			path = SmartTrackerTests;
 			sourceTree = "<group>";
@@ -486,24 +470,6 @@
 			productReference = 124F489F26CBB33F003770BC /* SmartTrackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		124F48A826CBB33F003770BC /* SmartTrackerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 124F48B726CBB33F003770BC /* Build configuration list for PBXNativeTarget "SmartTrackerUITests" */;
-			buildPhases = (
-				124F48A526CBB33F003770BC /* Sources */,
-				124F48A626CBB33F003770BC /* Frameworks */,
-				124F48A726CBB33F003770BC /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				124F48AB26CBB33F003770BC /* PBXTargetDependency */,
-			);
-			name = SmartTrackerUITests;
-			productName = SmartTrackerUITests;
-			productReference = 124F48A926CBB33F003770BC /* SmartTrackerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -518,10 +484,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					124F489E26CBB33F003770BC = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 124F488926CBB33E003770BC;
-					};
-					124F48A826CBB33F003770BC = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 124F488926CBB33E003770BC;
 					};
@@ -542,7 +504,6 @@
 			targets = (
 				124F488926CBB33E003770BC /* SmartTracker */,
 				124F489E26CBB33F003770BC /* SmartTrackerTests */,
-				124F48A826CBB33F003770BC /* SmartTrackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -568,13 +529,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		124F489D26CBB33F003770BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		124F48A726CBB33F003770BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -626,14 +580,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124F48A426CBB33F003770BC /* SmartTrackerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		124F48A526CBB33F003770BC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				124F48A426CBB33F003770BC /* TransactionServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -644,11 +591,6 @@
 			isa = PBXTargetDependency;
 			target = 124F488926CBB33E003770BC /* SmartTracker */;
 			targetProxy = 124F48A026CBB33F003770BC /* PBXContainerItemProxy */;
-		};
-		124F48AB26CBB33F003770BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 124F488926CBB33E003770BC /* SmartTracker */;
-			targetProxy = 124F48AA26CBB33F003770BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -877,50 +819,6 @@
 			};
 			name = Release;
 		};
-		124F48B826CBB33F003770BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.test.SmartTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartTracker;
-			};
-			name = Debug;
-		};
-		124F48B926CBB33F003770BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.test.SmartTrackerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SmartTracker;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -947,15 +845,6 @@
 			buildConfigurations = (
 				124F48B526CBB33F003770BC /* Debug */,
 				124F48B626CBB33F003770BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		124F48B726CBB33F003770BC /* Build configuration list for PBXNativeTarget "SmartTrackerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				124F48B826CBB33F003770BC /* Debug */,
-				124F48B926CBB33F003770BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
