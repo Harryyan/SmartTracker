@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED8026CC9DA50085DE15 /* Constant.swift */; };
+		1204ED8626CC9EE10085DE15 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED8526CC9EE10085DE15 /* Category.swift */; };
 		124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488D26CBB33E003770BC /* SmartTrackerApp.swift */; };
-		124F489026CBB33E003770BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488F26CBB33E003770BC /* ContentView.swift */; };
 		124F489226CBB33F003770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489126CBB33F003770BC /* Assets.xcassets */; };
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
 		124F489726CBB33F003770BC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F489626CBB33F003770BC /* Persistence.swift */; };
 		124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 124F489826CBB33F003770BC /* SmartTracker.xcdatamodeld */; };
 		124F48A426CBB33F003770BC /* SmartTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F48A326CBB33F003770BC /* SmartTrackerTests.swift */; };
-		124F48AE26CBB33F003770BC /* SmartTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F48AD26CBB33F003770BC /* SmartTrackerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1204ED8026CC9DA50085DE15 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1204ED8526CC9EE10085DE15 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		124F488A26CBB33E003770BC /* SmartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F488D26CBB33E003770BC /* SmartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerApp.swift; sourceTree = "<group>"; };
-		124F488F26CBB33E003770BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		124F489126CBB33F003770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		124F489426CBB33F003770BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		124F489626CBB33F003770BC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -45,7 +46,6 @@
 		124F489F26CBB33F003770BC /* SmartTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F48A326CBB33F003770BC /* SmartTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerTests.swift; sourceTree = "<group>"; };
 		124F48A926CBB33F003770BC /* SmartTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		124F48AD26CBB33F003770BC /* SmartTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +73,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1204ED7B26CC99E70085DE15 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED7F26CC9D680085DE15 /* Config */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1204ED7C26CC99F20085DE15 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED8326CC9E4B0085DE15 /* Entity */,
+				1204ED8426CC9E5E0085DE15 /* Interactor */,
+				1204ED8226CC9E380085DE15 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1204ED7D26CC99FA0085DE15 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED7E26CC9A1F0085DE15 /* Database */,
+				124F489626CBB33F003770BC /* Persistence.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1204ED7E26CC9A1F0085DE15 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				124F489826CBB33F003770BC /* SmartTracker.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		1204ED7F26CC9D680085DE15 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED8026CC9DA50085DE15 /* Constant.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		1204ED8226CC9E380085DE15 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1204ED8326CC9E4B0085DE15 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED8526CC9EE10085DE15 /* Category.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		1204ED8426CC9E5E0085DE15 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		124F488126CBB33E003770BC = {
 			isa = PBXGroup;
 			children = (
 				124F488C26CBB33E003770BC /* SmartTracker */,
 				124F48A226CBB33F003770BC /* SmartTrackerTests */,
-				124F48AC26CBB33F003770BC /* SmartTrackerUITests */,
 				124F488B26CBB33E003770BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,11 +160,11 @@
 		124F488C26CBB33E003770BC /* SmartTracker */ = {
 			isa = PBXGroup;
 			children = (
+				1204ED7D26CC99FA0085DE15 /* Data */,
+				1204ED7B26CC99E70085DE15 /* App */,
+				1204ED7C26CC99F20085DE15 /* Domain */,
 				124F488D26CBB33E003770BC /* SmartTrackerApp.swift */,
-				124F488F26CBB33E003770BC /* ContentView.swift */,
 				124F489126CBB33F003770BC /* Assets.xcassets */,
-				124F489626CBB33F003770BC /* Persistence.swift */,
-				124F489826CBB33F003770BC /* SmartTracker.xcdatamodeld */,
 				124F489326CBB33F003770BC /* Preview Content */,
 			);
 			path = SmartTracker;
@@ -120,14 +184,6 @@
 				124F48A326CBB33F003770BC /* SmartTrackerTests.swift */,
 			);
 			path = SmartTrackerTests;
-			sourceTree = "<group>";
-		};
-		124F48AC26CBB33F003770BC /* SmartTrackerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				124F48AD26CBB33F003770BC /* SmartTrackerUITests.swift */,
-			);
-			path = SmartTrackerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */,
+				1204ED8626CC9EE10085DE15 /* Category.swift in Sources */,
 				124F489726CBB33F003770BC /* Persistence.swift in Sources */,
-				124F489026CBB33E003770BC /* ContentView.swift in Sources */,
 				124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */,
+				1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +336,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				124F48AE26CBB33F003770BC /* SmartTrackerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

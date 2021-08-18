@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19186" systemVersion="21A5304g" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES" codeGenerationType="class">
+        <attribute name="amount" optional="YES" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="occuredOn" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Transaction" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>
