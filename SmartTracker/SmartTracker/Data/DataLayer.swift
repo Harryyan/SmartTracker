@@ -88,6 +88,7 @@ final class DataLayer: DataProvider {
             Task {
                 await MainActor.run {
                     self.rate = response.quotes[USDNZD] ?? self.rate
+                    self.currencyRate = self.rate
                     
                     self.reloadData()
                 }
