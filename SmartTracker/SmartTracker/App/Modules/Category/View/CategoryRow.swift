@@ -29,6 +29,6 @@ struct CategoryRow: View {
 
 struct CategoryRow_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryRow(category: .donation(budget: 500), sum: 600)
+        CategoryRow(category: Category.food(budget: BUDGET_FOOD), expenseInTotal: 500)
     }
 }

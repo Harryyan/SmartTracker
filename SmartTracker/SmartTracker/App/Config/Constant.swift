@@ -31,11 +31,24 @@ let BUDGET_TRANSPORTATION = 360.00
 let BUDGET_UTILITIES = 200.00
 let BUDGET_OTHER = 500.00
 
+let CATEGORY_NAVIGATION_TITLE = "Categories"
+
+// Transaction
+let TRANSACTION_NAVIGATION_TITLE = "Transactions"
+let TRANSACTION_TITLE_ALERT = "Please Enter Title"
+let ADD_TRANSACTION = "Add New Transaction"
+let EDIT_TRANSACTION = "Edit Transaction"
+
+// Common
+let TITLE = "Title"
+let AMOUNT = "Amount"
+let PICKERVIEW = "PickerView"
+let SAVE = "Save"
+let CANCEL = "Cancel"
+
+
 // Currency
 let RATE = "rate"
 let USDNZD = "USDNZD"
-
-
-// Currency types
 let CURRENCY_NZD = "NZD"
 let CURRENCY_USD = "USD"

@@ -38,6 +38,13 @@
 		1204EDCC26CCF91E0085DE15 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDC226CCF91E0085DE15 /* Inter-Black.ttf */; };
 		1204EDCD26CCF91E0085DE15 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDC326CCF91E0085DE15 /* Inter-SemiBold.ttf */; };
 		1204EDCF26CCF9520085DE15 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDCE26CCF9520085DE15 /* ColorExtension.swift */; };
+		1204EDD426CCFA720085DE15 /* TransactionTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDD326CCFA720085DE15 /* TransactionTabView.swift */; };
+		1204EDD626CCFA7B0085DE15 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDD526CCFA7B0085DE15 /* TransactionRow.swift */; };
+		1204EDD826CCFA980085DE15 /* TransactionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDD726CCFA980085DE15 /* TransactionPresenter.swift */; };
+		1204EDDA26CCFAC30085DE15 /* TransactionListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDD926CCFAC30085DE15 /* TransactionListWireframe.swift */; };
+		1204EDDC26CCFE8F0085DE15 /* TransactionViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDDB26CCFE8F0085DE15 /* TransactionViewModelExtension.swift */; };
+		1204EDE226CD00C60085DE15 /* TransactionFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDE126CD00C60085DE15 /* TransactionFormPresenter.swift */; };
+		1204EDE426CD01840085DE15 /* TransactionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDE326CD01840085DE15 /* TransactionFormView.swift */; };
 		124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488D26CBB33E003770BC /* SmartTrackerApp.swift */; };
 		124F489226CBB33F003770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489126CBB33F003770BC /* Assets.xcassets */; };
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
@@ -95,6 +102,14 @@
 		1204EDC226CCF91E0085DE15 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
 		1204EDC326CCF91E0085DE15 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		1204EDCE26CCF9520085DE15 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		1204EDD326CCFA720085DE15 /* TransactionTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTabView.swift; sourceTree = "<group>"; };
+		1204EDD526CCFA7B0085DE15 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		1204EDD726CCFA980085DE15 /* TransactionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPresenter.swift; sourceTree = "<group>"; };
+		1204EDD926CCFAC30085DE15 /* TransactionListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListWireframe.swift; sourceTree = "<group>"; };
+		1204EDDB26CCFE8F0085DE15 /* TransactionViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModelExtension.swift; sourceTree = "<group>"; };
+		1204EDE126CD00C60085DE15 /* TransactionFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormPresenter.swift; sourceTree = "<group>"; };
+		1204EDE326CD01840085DE15 /* TransactionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormView.swift; sourceTree = "<group>"; };
+		1204EDE526CD04E90085DE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		124F488A26CBB33E003770BC /* SmartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F488D26CBB33E003770BC /* SmartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerApp.swift; sourceTree = "<group>"; };
 		124F489126CBB33F003770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -194,6 +209,7 @@
 			children = (
 				1204ED8526CC9EE10085DE15 /* Category.swift */,
 				1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */,
+				1204EDDB26CCFE8F0085DE15 /* TransactionViewModelExtension.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -256,6 +272,9 @@
 		1204ED9E26CCEB980085DE15 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				1204EDD226CCFA620085DE15 /* Presenter */,
+				1204EDD126CCFA5C0085DE15 /* View */,
+				1204EDD026CCFA510085DE15 /* Wireframe */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -263,6 +282,8 @@
 		1204ED9F26CCEBAB0085DE15 /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				1204EDDD26CD00930085DE15 /* Presenter */,
+				1204EDDE26CD009B0085DE15 /* View */,
 			);
 			path = Form;
 			sourceTree = "<group>";
@@ -337,6 +358,47 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		1204EDD026CCFA510085DE15 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDD926CCFAC30085DE15 /* TransactionListWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		1204EDD126CCFA5C0085DE15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDD326CCFA720085DE15 /* TransactionTabView.swift */,
+				1204EDD526CCFA7B0085DE15 /* TransactionRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1204EDD226CCFA620085DE15 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDD726CCFA980085DE15 /* TransactionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1204EDDD26CD00930085DE15 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDE126CD00C60085DE15 /* TransactionFormPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1204EDDE26CD009B0085DE15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDE326CD01840085DE15 /* TransactionFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		124F488126CBB33E003770BC = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +425,7 @@
 				1204ED7B26CC99E70085DE15 /* App */,
 				1204ED7C26CC99F20085DE15 /* Domain */,
 				124F488D26CBB33E003770BC /* SmartTrackerApp.swift */,
+				1204EDE526CD04E90085DE15 /* Info.plist */,
 				124F489126CBB33F003770BC /* Assets.xcassets */,
 				124F489326CBB33F003770BC /* Preview Content */,
 			);
@@ -526,22 +589,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				1204ED9526CCE9F10085DE15 /* CategoryListPresenter.swift in Sources */,
+				1204EDE226CD00C60085DE15 /* TransactionFormPresenter.swift in Sources */,
 				1204EDA626CCEC310085DE15 /* DataLayer.swift in Sources */,
 				124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */,
+				1204EDD626CCFA7B0085DE15 /* TransactionRow.swift in Sources */,
 				1204EDCF26CCF9520085DE15 /* ColorExtension.swift in Sources */,
+				1204EDDA26CCFAC30085DE15 /* TransactionListWireframe.swift in Sources */,
 				1204EDB826CCF8E50085DE15 /* DateUtils.swift in Sources */,
 				1204EDB426CCF4100085DE15 /* InterFontModifier.swift in Sources */,
 				1204ED8626CC9EE10085DE15 /* Category.swift in Sources */,
 				1204ED9126CCE96E0085DE15 /* CategoryRow.swift in Sources */,
+				1204EDDC26CCFE8F0085DE15 /* TransactionViewModelExtension.swift in Sources */,
+				1204EDD826CCFA980085DE15 /* TransactionPresenter.swift in Sources */,
 				1204EDAD26CCEEEC0085DE15 /* DateExtension.swift in Sources */,
 				1204ED8826CCE8F30085DE15 /* RootView.swift in Sources */,
 				1204ED9726CCEA2A0085DE15 /* CategoryListInteractor.swift in Sources */,
 				124F489726CBB33F003770BC /* Persistence.swift in Sources */,
 				1204EDB126CCF3DE0085DE15 /* TextView.swift in Sources */,
+				1204EDE426CD01840085DE15 /* TransactionFormView.swift in Sources */,
 				1204ED9926CCEA560085DE15 /* TransactionInteractor.swift in Sources */,
 				124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */,
 				1204EDA826CCEC410085DE15 /* CategoryRepository.swift in Sources */,
 				1204EDB626CCF4280085DE15 /* DropdownButton.swift in Sources */,
+				1204EDD426CCFA720085DE15 /* TransactionTabView.swift in Sources */,
 				1204ED9326CCE9830085DE15 /* CategoryImageView.swift in Sources */,
 				1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */,
 				1204ED8F26CCE95C0085DE15 /* CategoryTabView.swift in Sources */,
@@ -709,6 +779,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SmartTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -738,6 +809,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SmartTracker/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

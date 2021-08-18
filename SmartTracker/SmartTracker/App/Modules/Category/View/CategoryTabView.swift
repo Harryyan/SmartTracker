@@ -13,11 +13,11 @@ struct CategoryTabView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach (presenter.categorySums, id: \.id) {
-                    CategoryRow(category: $0.category, sum: $0.sum)
+                ForEach (presenter.expenses, id: \.id) {
+                    CategoryRow(category: $0.category, expenseInTotal: $0.expenseInTotal)
                 }
             }
-            .navigationBarTitle("Categories")
+            .navigationBarTitle(CATEGORY_NAVIGATION_TITLE)
         }
     }
 

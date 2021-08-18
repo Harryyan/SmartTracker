@@ -114,3 +114,5 @@ final class DataLayer: DataProvider {
         self.transactionRepository.loadAllTransactions()
     }
 }
+
+extension DataLayer: ObservableObject {}
