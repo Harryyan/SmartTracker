@@ -44,9 +44,9 @@ class SmartTrackerTests: XCTestCase {
         // When
         transactionInteractor.upsert(transaction: transaction)
         
+        // Then
         newTransaction = try wait(for: dataProvier.transactionDataPublisher).first
         
-        // Then
         XCTAssertNotNil(newTransaction, "Transaction should not be nil")
         XCTAssertNotNil(newTransaction?.id, "Transaction Id should not be nil")
         XCTAssertEqual(newTransaction?.title, "Donation")
@@ -54,6 +54,67 @@ class SmartTrackerTests: XCTestCase {
         XCTAssertEqual(newTransaction?.amount?.doubleValue, 40.00)
         XCTAssertEqual(newTransaction?.currency, "USD")
         XCTAssertEqual(newTransaction?.occuredOn, date)
+    }
+    
+    func testUpdateTransaction() throws {
+        // Given
+        let transaction = Transaction(context: dataProvier.context)
+        var transactionToUpdate: Transaction?
+        var transactionUpdated: Transaction?
+        let date = Date()
+        
+        transaction.id = UUID()
+        transaction.title = "Donation"
+        transaction.category = Category.donation(budget: 100).id
+        transaction.amount = NSDecimalNumber(value: 40.00)
+        transaction.currency = "USD"
+        transaction.occuredOn = date
+        
+        // When
+        transactionInteractor.upsert(transaction: transaction)
+        
+        // Then
+        transactionToUpdate = try wait(for: dataProvier.transactionDataPublisher).first
+        
+        XCTAssertNotNil(transactionToUpdate, "Transaction should not be nil")
+        XCTAssertNotNil(transactionToUpdate?.id, "Transaction Id should not be nil")
+        
+        // When
+        transactionToUpdate?.title = "Donation_Alternative"
+        if let transactionToUpdate = transactionToUpdate {
+            transactionInteractor.upsert(transaction: transactionToUpdate)
+        }
+        
+        // Then
+        transactionUpdated = try wait(for: dataProvier.transactionDataPublisher).first
+        
+        XCTAssertNotNil(transactionUpdated, "Transaction should not be nil")
+        XCTAssertEqual(transactionUpdated?.title, "Donation_Alternative")
+        XCTAssertEqual(transactionUpdated?.id, transactionToUpdate?.id)
+    }
+    
+    func testDeleteTransaction() throws {
+        // Given
+        let transactionToDelete = Transaction(context: dataProvier.context)
+        let date = Date()
+        var result: Transaction?
+        
+        transactionToDelete.id = UUID()
+        transactionToDelete.title = "Donation"
+        transactionToDelete.category = Category.donation(budget: 100).id
+        transactionToDelete.amount = NSDecimalNumber(value: 40.00)
+        transactionToDelete.currency = "USD"
+        transactionToDelete.occuredOn = date
+        
+        // When
+        transactionInteractor.upsert(transaction: transactionToDelete)
+        transactionInteractor.delete(transaction: transactionToDelete)
+        
+        // Then
+        result = try wait(for: dataProvier.transactionDataPublisher).first
+        
+        XCTAssertNil(result, "Transaction should be nil")
+        XCTAssertNil(result?.id, "Transaction ID should be nil")
     }
     
 }
