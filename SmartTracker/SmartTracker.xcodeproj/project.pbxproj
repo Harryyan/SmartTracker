@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED8026CC9DA50085DE15 /* Constant.swift */; };
 		1204ED8626CC9EE10085DE15 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED8526CC9EE10085DE15 /* Category.swift */; };
+		1204ED8826CCE8F30085DE15 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED8726CCE8F30085DE15 /* RootView.swift */; };
+		1204ED8F26CCE95C0085DE15 /* CategoryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED8E26CCE95C0085DE15 /* CategoryTabView.swift */; };
+		1204ED9126CCE96E0085DE15 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9026CCE96E0085DE15 /* CategoryRow.swift */; };
+		1204ED9326CCE9830085DE15 /* CategoryImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9226CCE9830085DE15 /* CategoryImageView.swift */; };
+		1204ED9526CCE9F10085DE15 /* CategoryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9426CCE9F10085DE15 /* CategoryListPresenter.swift */; };
+		1204ED9726CCEA2A0085DE15 /* CategoryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9626CCEA2A0085DE15 /* CategoryListInteractor.swift */; };
+		1204ED9926CCEA560085DE15 /* TransactionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9826CCEA560085DE15 /* TransactionInteractor.swift */; };
+		1204ED9B26CCEA7C0085DE15 /* DataProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9A26CCEA7C0085DE15 /* DataProviders.swift */; };
+		1204ED9D26CCEB2E0085DE15 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */; };
+		1204EDA226CCEBCA0085DE15 /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA126CCEBCA0085DE15 /* TransactionViewModel.swift */; };
 		124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488D26CBB33E003770BC /* SmartTrackerApp.swift */; };
 		124F489226CBB33F003770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489126CBB33F003770BC /* Assets.xcassets */; };
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
@@ -37,6 +47,16 @@
 /* Begin PBXFileReference section */
 		1204ED8026CC9DA50085DE15 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		1204ED8526CC9EE10085DE15 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1204ED8726CCE8F30085DE15 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1204ED8E26CCE95C0085DE15 /* CategoryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTabView.swift; sourceTree = "<group>"; };
+		1204ED9026CCE96E0085DE15 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		1204ED9226CCE9830085DE15 /* CategoryImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImageView.swift; sourceTree = "<group>"; };
+		1204ED9426CCE9F10085DE15 /* CategoryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListPresenter.swift; sourceTree = "<group>"; };
+		1204ED9626CCEA2A0085DE15 /* CategoryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryListInteractor.swift; sourceTree = "<group>"; };
+		1204ED9826CCEA560085DE15 /* TransactionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInteractor.swift; sourceTree = "<group>"; };
+		1204ED9A26CCEA7C0085DE15 /* DataProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviders.swift; sourceTree = "<group>"; };
+		1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
+		1204EDA126CCEBCA0085DE15 /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
 		124F488A26CBB33E003770BC /* SmartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F488D26CBB33E003770BC /* SmartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerApp.swift; sourceTree = "<group>"; };
 		124F489126CBB33F003770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				1204ED7F26CC9D680085DE15 /* Config */,
+				1204ED8926CCE90A0085DE15 /* Modules */,
+				1204ED8726CCE8F30085DE15 /* RootView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -119,6 +141,7 @@
 		1204ED8226CC9E380085DE15 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				1204ED9A26CCEA7C0085DE15 /* DataProviders.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -127,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				1204ED8526CC9EE10085DE15 /* Category.swift */,
+				1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -134,8 +158,78 @@
 		1204ED8426CC9E5E0085DE15 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				1204ED9626CCEA2A0085DE15 /* CategoryListInteractor.swift */,
+				1204ED9826CCEA560085DE15 /* TransactionInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1204ED8926CCE90A0085DE15 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED8B26CCE92B0085DE15 /* Category */,
+				1204ED8A26CCE91B0085DE15 /* Transaction */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		1204ED8A26CCE91B0085DE15 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDA026CCEBB70085DE15 /* Viewmodel */,
+				1204ED9E26CCEB980085DE15 /* List */,
+				1204ED9F26CCEBAB0085DE15 /* Form */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		1204ED8B26CCE92B0085DE15 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED8C26CCE9380085DE15 /* Presenter */,
+				1204ED8D26CCE9490085DE15 /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1204ED8C26CCE9380085DE15 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED9426CCE9F10085DE15 /* CategoryListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1204ED8D26CCE9490085DE15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1204ED8E26CCE95C0085DE15 /* CategoryTabView.swift */,
+				1204ED9026CCE96E0085DE15 /* CategoryRow.swift */,
+				1204ED9226CCE9830085DE15 /* CategoryImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1204ED9E26CCEB980085DE15 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1204ED9F26CCEBAB0085DE15 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		1204EDA026CCEBB70085DE15 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDA126CCEBCA0085DE15 /* TransactionViewModel.swift */,
+			);
+			path = Viewmodel;
 			sourceTree = "<group>";
 		};
 		124F488126CBB33E003770BC = {
@@ -316,11 +410,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1204ED9526CCE9F10085DE15 /* CategoryListPresenter.swift in Sources */,
 				124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */,
 				1204ED8626CC9EE10085DE15 /* Category.swift in Sources */,
+				1204ED9126CCE96E0085DE15 /* CategoryRow.swift in Sources */,
+				1204ED8826CCE8F30085DE15 /* RootView.swift in Sources */,
+				1204ED9726CCEA2A0085DE15 /* CategoryListInteractor.swift in Sources */,
 				124F489726CBB33F003770BC /* Persistence.swift in Sources */,
+				1204ED9926CCEA560085DE15 /* TransactionInteractor.swift in Sources */,
 				124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */,
+				1204ED9326CCE9830085DE15 /* CategoryImageView.swift in Sources */,
 				1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */,
+				1204ED8F26CCE95C0085DE15 /* CategoryTabView.swift in Sources */,
+				1204ED9B26CCEA7C0085DE15 /* DataProviders.swift in Sources */,
+				1204ED9D26CCEB2E0085DE15 /* CurrencyResponse.swift in Sources */,
+				1204EDA226CCEBCA0085DE15 /* TransactionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
