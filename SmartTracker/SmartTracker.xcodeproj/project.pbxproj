@@ -23,6 +23,21 @@
 		1204EDA826CCEC410085DE15 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA726CCEC410085DE15 /* CategoryRepository.swift */; };
 		1204EDAA26CCEC5A0085DE15 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDA926CCEC5A0085DE15 /* TransactionRepository.swift */; };
 		1204EDAD26CCEEEC0085DE15 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDAC26CCEEEC0085DE15 /* DateExtension.swift */; };
+		1204EDB126CCF3DE0085DE15 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDB026CCF3DE0085DE15 /* TextView.swift */; };
+		1204EDB426CCF4100085DE15 /* InterFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDB326CCF4100085DE15 /* InterFontModifier.swift */; };
+		1204EDB626CCF4280085DE15 /* DropdownButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDB526CCF4280085DE15 /* DropdownButton.swift */; };
+		1204EDB826CCF8E50085DE15 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDB726CCF8E50085DE15 /* DateUtils.swift */; };
+		1204EDC426CCF91E0085DE15 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDBA26CCF91E0085DE15 /* Inter-Medium.ttf */; };
+		1204EDC526CCF91E0085DE15 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDBB26CCF91E0085DE15 /* Inter-Light.ttf */; };
+		1204EDC626CCF91E0085DE15 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDBC26CCF91E0085DE15 /* Inter-Thin.ttf */; };
+		1204EDC726CCF91E0085DE15 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDBD26CCF91E0085DE15 /* Inter-Bold.ttf */; };
+		1204EDC826CCF91E0085DE15 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDBE26CCF91E0085DE15 /* Inter-Regular.ttf */; };
+		1204EDC926CCF91E0085DE15 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDBF26CCF91E0085DE15 /* Inter-ExtraBold.ttf */; };
+		1204EDCA26CCF91E0085DE15 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDC026CCF91E0085DE15 /* OFL.txt */; };
+		1204EDCB26CCF91E0085DE15 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDC126CCF91E0085DE15 /* Inter-ExtraLight.ttf */; };
+		1204EDCC26CCF91E0085DE15 /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDC226CCF91E0085DE15 /* Inter-Black.ttf */; };
+		1204EDCD26CCF91E0085DE15 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1204EDC326CCF91E0085DE15 /* Inter-SemiBold.ttf */; };
+		1204EDCF26CCF9520085DE15 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDCE26CCF9520085DE15 /* ColorExtension.swift */; };
 		124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488D26CBB33E003770BC /* SmartTrackerApp.swift */; };
 		124F489226CBB33F003770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489126CBB33F003770BC /* Assets.xcassets */; };
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
@@ -65,6 +80,21 @@
 		1204EDA726CCEC410085DE15 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 		1204EDA926CCEC5A0085DE15 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
 		1204EDAC26CCEEEC0085DE15 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		1204EDB026CCF3DE0085DE15 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		1204EDB326CCF4100085DE15 /* InterFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterFontModifier.swift; sourceTree = "<group>"; };
+		1204EDB526CCF4280085DE15 /* DropdownButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownButton.swift; sourceTree = "<group>"; };
+		1204EDB726CCF8E50085DE15 /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		1204EDBA26CCF91E0085DE15 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		1204EDBB26CCF91E0085DE15 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		1204EDBC26CCF91E0085DE15 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		1204EDBD26CCF91E0085DE15 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		1204EDBE26CCF91E0085DE15 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		1204EDBF26CCF91E0085DE15 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1204EDC026CCF91E0085DE15 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1204EDC126CCF91E0085DE15 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1204EDC226CCF91E0085DE15 /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		1204EDC326CCF91E0085DE15 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		1204EDCE26CCF9520085DE15 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		124F488A26CBB33E003770BC /* SmartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F488D26CBB33E003770BC /* SmartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerApp.swift; sourceTree = "<group>"; };
 		124F489126CBB33F003770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +134,8 @@
 		1204ED7B26CC99E70085DE15 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				1204EDB926CCF91E0085DE15 /* Font */,
+				1204EDAE26CCF3960085DE15 /* Utility */,
 				1204ED7F26CC9D680085DE15 /* Config */,
 				1204ED8926CCE90A0085DE15 /* Modules */,
 				1204ED8726CCE8F30085DE15 /* RootView.swift */,
@@ -268,6 +300,43 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		1204EDAE26CCF3960085DE15 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDAF26CCF3B20085DE15 /* Component */,
+				1204EDB726CCF8E50085DE15 /* DateUtils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1204EDAF26CCF3B20085DE15 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDB026CCF3DE0085DE15 /* TextView.swift */,
+				1204EDB326CCF4100085DE15 /* InterFontModifier.swift */,
+				1204EDB526CCF4280085DE15 /* DropdownButton.swift */,
+				1204EDCE26CCF9520085DE15 /* ColorExtension.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		1204EDB926CCF91E0085DE15 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDBA26CCF91E0085DE15 /* Inter-Medium.ttf */,
+				1204EDBB26CCF91E0085DE15 /* Inter-Light.ttf */,
+				1204EDBC26CCF91E0085DE15 /* Inter-Thin.ttf */,
+				1204EDBD26CCF91E0085DE15 /* Inter-Bold.ttf */,
+				1204EDBE26CCF91E0085DE15 /* Inter-Regular.ttf */,
+				1204EDBF26CCF91E0085DE15 /* Inter-ExtraBold.ttf */,
+				1204EDC026CCF91E0085DE15 /* OFL.txt */,
+				1204EDC126CCF91E0085DE15 /* Inter-ExtraLight.ttf */,
+				1204EDC226CCF91E0085DE15 /* Inter-Black.ttf */,
+				1204EDC326CCF91E0085DE15 /* Inter-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		124F488126CBB33E003770BC = {
 			isa = PBXGroup;
 			children = (
@@ -420,8 +489,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1204EDCD26CCF91E0085DE15 /* Inter-SemiBold.ttf in Resources */,
+				1204EDC726CCF91E0085DE15 /* Inter-Bold.ttf in Resources */,
+				1204EDCB26CCF91E0085DE15 /* Inter-ExtraLight.ttf in Resources */,
 				124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */,
 				124F489226CBB33F003770BC /* Assets.xcassets in Resources */,
+				1204EDCA26CCF91E0085DE15 /* OFL.txt in Resources */,
+				1204EDC926CCF91E0085DE15 /* Inter-ExtraBold.ttf in Resources */,
+				1204EDCC26CCF91E0085DE15 /* Inter-Black.ttf in Resources */,
+				1204EDC526CCF91E0085DE15 /* Inter-Light.ttf in Resources */,
+				1204EDC626CCF91E0085DE15 /* Inter-Thin.ttf in Resources */,
+				1204EDC426CCF91E0085DE15 /* Inter-Medium.ttf in Resources */,
+				1204EDC826CCF91E0085DE15 /* Inter-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,15 +528,20 @@
 				1204ED9526CCE9F10085DE15 /* CategoryListPresenter.swift in Sources */,
 				1204EDA626CCEC310085DE15 /* DataLayer.swift in Sources */,
 				124F489A26CBB33F003770BC /* SmartTracker.xcdatamodeld in Sources */,
+				1204EDCF26CCF9520085DE15 /* ColorExtension.swift in Sources */,
+				1204EDB826CCF8E50085DE15 /* DateUtils.swift in Sources */,
+				1204EDB426CCF4100085DE15 /* InterFontModifier.swift in Sources */,
 				1204ED8626CC9EE10085DE15 /* Category.swift in Sources */,
 				1204ED9126CCE96E0085DE15 /* CategoryRow.swift in Sources */,
 				1204EDAD26CCEEEC0085DE15 /* DateExtension.swift in Sources */,
 				1204ED8826CCE8F30085DE15 /* RootView.swift in Sources */,
 				1204ED9726CCEA2A0085DE15 /* CategoryListInteractor.swift in Sources */,
 				124F489726CBB33F003770BC /* Persistence.swift in Sources */,
+				1204EDB126CCF3DE0085DE15 /* TextView.swift in Sources */,
 				1204ED9926CCEA560085DE15 /* TransactionInteractor.swift in Sources */,
 				124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */,
 				1204EDA826CCEC410085DE15 /* CategoryRepository.swift in Sources */,
+				1204EDB626CCF4280085DE15 /* DropdownButton.swift in Sources */,
 				1204ED9326CCE9830085DE15 /* CategoryImageView.swift in Sources */,
 				1204ED8126CC9DA50085DE15 /* Constant.swift in Sources */,
 				1204ED8F26CCE95C0085DE15 /* CategoryTabView.swift in Sources */,

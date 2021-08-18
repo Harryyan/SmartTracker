@@ -9,12 +9,24 @@ import SwiftUI
 
 @main
 struct SmartTrackerApp: App {
-    let persistenceController = PersistenceController.shared
-
+    @Environment(\.scenePhase) private var scenePhase
+    
+    let dataProvider: DataLayer
+    
+    init() {
+        dataProvider = DataLayer(context: PersistenceController.shared.container.viewContext)
+    }
+    
     var body: some Scene {
         WindowGroup {
-            RootView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            RootView().environmentObject(dataProvider)
+        }
+        .onChange(of: scenePhase) { phase in
+            if phase == .active {
+                Task {
+                    let _ = try? await self.dataProvider.fetchCurrency(url: CurrencyResponse.url)
+                }
+            }
         }
     }
 }

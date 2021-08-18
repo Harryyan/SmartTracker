@@ -29,7 +29,7 @@ final class TransactionViewModel: ObservableObject, Identifiable {
         
         id = transaction?.id ?? UUID()
         title = transaction?.title ?? ""
-        currencyName = transaction?.currency ?? "NZD"
+        currencyName = transaction?.currency ?? CURRENCY_NZD
         categoryName = transaction?.category ?? Category.other(budget: 0).id
         occuredOn = transaction?.occuredOn ?? Date()
         
