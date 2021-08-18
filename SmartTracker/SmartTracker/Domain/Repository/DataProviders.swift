@@ -19,7 +19,7 @@ protocol DataProvider: AnyObject {
     
     func update(transaction: Transaction)
     func delete(transaction: Transaction)
-    func sum(for category: String, at rate: Double) -> Double
+    func sumOfExpense(of category: String, at rate: Double) -> Double
     
     func fetchCurrency(url: URL) async throws -> Double
 }

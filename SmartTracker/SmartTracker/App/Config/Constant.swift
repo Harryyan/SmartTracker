@@ -31,6 +31,10 @@ let BUDGET_TRANSPORTATION = 360.00
 let BUDGET_UTILITIES = 200.00
 let BUDGET_OTHER = 500.00
 
+// Currency
+let RATE = "rate"
+let USDNZD = "USDNZD"
+
 
 // Currency types
 let CURRENCY_NZD = "NZD"
