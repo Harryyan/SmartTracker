@@ -45,6 +45,8 @@
 		1204EDDC26CCFE8F0085DE15 /* TransactionViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDDB26CCFE8F0085DE15 /* TransactionViewModelExtension.swift */; };
 		1204EDE226CD00C60085DE15 /* TransactionFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDE126CD00C60085DE15 /* TransactionFormPresenter.swift */; };
 		1204EDE426CD01840085DE15 /* TransactionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDE326CD01840085DE15 /* TransactionFormView.swift */; };
+		1204EDE726CD14D40085DE15 /* DataProviderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDE626CD14D40085DE15 /* DataProviderServiceTests.swift */; };
+		1204EDE926CD16EA0085DE15 /* XCTestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204EDE826CD16EA0085DE15 /* XCTestExtension.swift */; };
 		124F488E26CBB33E003770BC /* SmartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124F488D26CBB33E003770BC /* SmartTrackerApp.swift */; };
 		124F489226CBB33F003770BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489126CBB33F003770BC /* Assets.xcassets */; };
 		124F489526CBB33F003770BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 124F489426CBB33F003770BC /* Preview Assets.xcassets */; };
@@ -103,6 +105,8 @@
 		1204EDE126CD00C60085DE15 /* TransactionFormPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormPresenter.swift; sourceTree = "<group>"; };
 		1204EDE326CD01840085DE15 /* TransactionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFormView.swift; sourceTree = "<group>"; };
 		1204EDE526CD04E90085DE15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1204EDE626CD14D40085DE15 /* DataProviderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderServiceTests.swift; sourceTree = "<group>"; };
+		1204EDE826CD16EA0085DE15 /* XCTestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestExtension.swift; sourceTree = "<group>"; };
 		124F488A26CBB33E003770BC /* SmartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		124F488D26CBB33E003770BC /* SmartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartTrackerApp.swift; sourceTree = "<group>"; };
 		124F489126CBB33F003770BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -428,6 +432,8 @@
 			isa = PBXGroup;
 			children = (
 				124F48A326CBB33F003770BC /* TransactionServiceTests.swift */,
+				1204EDE626CD14D40085DE15 /* DataProviderServiceTests.swift */,
+				1204EDE826CD16EA0085DE15 /* XCTestExtension.swift */,
 			);
 			path = SmartTrackerTests;
 			sourceTree = "<group>";
@@ -580,6 +586,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1204EDE726CD14D40085DE15 /* DataProviderServiceTests.swift in Sources */,
+				1204EDE926CD16EA0085DE15 /* XCTestExtension.swift in Sources */,
 				124F48A426CBB33F003770BC /* TransactionServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,6 +28,33 @@ class SmartTrackerTests: XCTestCase {
         cancellables = []
     }
     
-    
+    func testAddTransaction() throws {
+        // Given
+        let transaction = Transaction(context: dataProvier.context)
+        let date = Date()
+        var newTransaction: Transaction?
+        
+        transaction.id = UUID()
+        transaction.title = "Donation"
+        transaction.category = Category.donation(budget: 100).id
+        transaction.amount = NSDecimalNumber(value: 40.00)
+        transaction.currency = "USD"
+        transaction.occuredOn = date
+        
+        // When
+        transactionInteractor.update(transaction: transaction)
+        
+        newTransaction = try wait(for: dataProvier.transactionDataPublisher).first
+        
+        // Then
+        XCTAssertNil(error)
+        XCTAssertNotNil(newTransaction, "Transaction should not be nil")
+        XCTAssertNotNil(newTransaction?.id, "Transaction Id should not be nil")
+        XCTAssertEqual(newTransaction?.title, "Donation")
+        XCTAssertEqual(newTransaction?.category, Category.donation(budget: 100).id)
+        XCTAssertEqual(newTransaction?.amount?.doubleValue, 40.00)
+        XCTAssertEqual(newTransaction?.currency, "USD")
+        XCTAssertEqual(newTransaction?.occuredOn, date)
+    }
     
 }
