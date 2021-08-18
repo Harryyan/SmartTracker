@@ -38,7 +38,7 @@ class SmartTrackerTests: XCTestCase {
         transaction.title = DONATION
         transaction.category = Category.donation(budget: BUDGET_DONATION).id
         transaction.amount = NSDecimalNumber(value: 40.00)
-        transaction.currency = CURRENCY_USD
+        transaction.currency = CURRENCY_NZD
         transaction.occuredOn = date
         
         // When
@@ -49,10 +49,10 @@ class SmartTrackerTests: XCTestCase {
         
         XCTAssertNotNil(newTransaction, "Transaction should not be nil")
         XCTAssertNotNil(newTransaction?.id, "Transaction Id should not be nil")
-        XCTAssertEqual(newTransaction?.title, "Donation")
+        XCTAssertEqual(newTransaction?.title, DONATION)
         XCTAssertEqual(newTransaction?.category, Category.donation(budget: 100).id)
         XCTAssertEqual(newTransaction?.amount?.doubleValue, 40.00)
-        XCTAssertEqual(newTransaction?.currency, "USD")
+        XCTAssertEqual(newTransaction?.currency, CURRENCY_NZD)
         XCTAssertEqual(newTransaction?.occuredOn, date)
     }
     
@@ -64,10 +64,10 @@ class SmartTrackerTests: XCTestCase {
         let date = Date()
         
         transaction.id = UUID()
-        transaction.title = "Donation"
+        transaction.title = DONATION
         transaction.category = Category.donation(budget: 100).id
         transaction.amount = NSDecimalNumber(value: 40.00)
-        transaction.currency = "USD"
+        transaction.currency = CURRENCY_NZD
         transaction.occuredOn = date
         
         // When
@@ -100,10 +100,10 @@ class SmartTrackerTests: XCTestCase {
         var result: Transaction?
         
         transactionToDelete.id = UUID()
-        transactionToDelete.title = "Donation"
+        transactionToDelete.title = DONATION
         transactionToDelete.category = Category.donation(budget: 100).id
         transactionToDelete.amount = NSDecimalNumber(value: 40.00)
-        transactionToDelete.currency = "USD"
+        transactionToDelete.currency = CURRENCY_NZD
         transactionToDelete.occuredOn = date
         
         // When
