@@ -198,7 +198,6 @@
 			children = (
 				1204ED8526CC9EE10085DE15 /* Category.swift */,
 				1204ED9C26CCEB2E0085DE15 /* CurrencyResponse.swift */,
-				1204EDDB26CCFE8F0085DE15 /* TransactionViewModelExtension.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -313,6 +312,7 @@
 		1204EDAE26CCF3960085DE15 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				125D7B9126CE183600E32734 /* Extension */,
 				1204EDAF26CCF3B20085DE15 /* Component */,
 				1204EDB726CCF8E50085DE15 /* DateUtils.swift */,
 			);
@@ -436,6 +436,14 @@
 				1204EDE826CD16EA0085DE15 /* XCTestExtension.swift */,
 			);
 			path = SmartTrackerTests;
+			sourceTree = "<group>";
+		};
+		125D7B9126CE183600E32734 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1204EDDB26CCFE8F0085DE15 /* TransactionViewModelExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
