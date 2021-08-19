@@ -2,7 +2,6 @@
 
 [![Swift](https://img.shields.io/badge/Swift-5.5-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.5-Orange?style=flat-square)
 [![Platforms](https://img.shields.io/badge/Platforms-iOS_iPadOS-yellowgreen?style=flat-square)](https://img.shields.io/badge/Platforms-iOS_iPadOS-Green?style=flat-square)
-[![Xcode](https://img.shields.io/badge/Xcode-13 Beta 5-blue?style=flat-square)](https://img.shields.io/badge/Platforms-iOS_iPadOS-Green?style=flat-square)
 
 #### ⚠️ To run this project, please use lastest Xcode 13 Beta 5 (Beta 4 is also OK) ⚠️
 
