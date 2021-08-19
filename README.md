@@ -16,7 +16,7 @@
 - iOS 15.0
 - Xcode 13 Beta 5
 - Swfit 5.5
-- Mac OS (Monterey) - Optional
+- MacOS (Monterey) - Optional
 
 ## Features
 
