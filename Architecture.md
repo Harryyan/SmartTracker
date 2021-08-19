@@ -53,4 +53,26 @@ Since App is the presentation layer of the application, it is the most framework
     - Provide data to view, and handle view events, deal with value binding. Also does some   
       extra filtering.      
 - Wireframe
-    -
+    - Responsible for initialising next view with necessary paramters like presenter,
+      interactor or viewmodel.
+- Extra 
+    - Utility: define some helper functions
+    - Config: define constant     
+  
+## Data
+
+Represents the data-layer of the application. The Data module, which is a part of the outermost layer, is responsible for data retrieval. This can be in the form of API calls to a server, a local database, or even both.
+
+### Contents of Data
+
+- Repositories
+    - Every Repository should implement Repository Protocol from the Domain layer.
+    - Retrieve data from databases or other methods.
+    - Responsible for any API calls and high-level data manipulation such as
+       - Handling local storage
+       - Calling an API
+
+- Extra
+    - Utility
+    - Helper: PersistenceController
+    - Database: Core Data
