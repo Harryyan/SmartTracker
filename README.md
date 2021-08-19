@@ -44,3 +44,21 @@ Transaction list shows all transactions with title, category, amount in NZD and 
 <img src="./assets/images/transactions.png" width="200">
 
 ### Add / Edit Transaction
+
+User can click "+" button(top right) to add a new transaction or tap on existing transaction to edit it.
+
+<img src="./assets/images/edit.png" width="200">
+
+### Delete Transaction
+
+User can delete one transaction by swipe item to left.
+
+<img src="./assets/images/delete.png" width="200">
+
+### Fetch latest currency rate
+
+*Datalayer* is responsible for fetching lastest USD to NZD currency rate and save it in @AppStorage.
+
+### DataLayer
+
+This is for keeping user's transaction records into local database by using CoreData with *Repository Pattern*
