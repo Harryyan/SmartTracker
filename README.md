@@ -6,18 +6,15 @@
 
 #### ⚠️ To run this project, please use lastest Xcode 13 Beta 5 (Beta 4 is also OK) ⚠️
 
-- [Requirements](#requirements)
-- [Features](#Features)
 
-##Requirements
+## Requirements
 
 - iOS 15.0
 - Xcode 13 Beta 5
 - Swfit 5.5
 - Mac OS (Monterey) - Optional
 
-
-##Features
+## Features
 
 - Display pre-defined categories with **budget** and current **total expense** in current month
 - Highlight category if total expense of it exceed its budget
