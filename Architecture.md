@@ -1,12 +1,12 @@
 # Project Architecture Design
 
-<img src="./assets/images/clean.jpeg" width="800">
+<img src="./assets/images/clean.jpeg" width="600">
 
 ## Introduction
 
 This architecture is based on the Clean Architecture by Uncle Bob. The main focus of the architecture is separation of concerns and scalability. It consists of three main modules: Domain, App and Data.
 
-<img src="./assets/images/viper.png" width="800">
+<img src="./assets/images/viper.png" width="600">
 
 ## The Dependency Rule
 
