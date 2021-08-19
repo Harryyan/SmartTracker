@@ -1,4 +1,4 @@
-# Project Architecture Design
+# SmartTracker Architecture
 
 <img src="./assets/images/clean.jpeg" width="600">
 
@@ -71,7 +71,6 @@ Represents the data-layer of the application. The Data module, which is a part o
     - Responsible for any API calls and high-level data manipulation such as
        - Handling local storage
        - Calling an API
-
 - Extra
     - Utility
     - Helper: PersistenceController
