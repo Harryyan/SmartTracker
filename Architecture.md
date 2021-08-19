@@ -39,3 +39,18 @@ Domain represents the inner-most layer. Therefore, it the most abstract layer in
 
 
 ## App
+
+App is the layer outside Domain. App crosses the boundaries of the layers to communicate with Domain. However, the Dependency Rule is never violated. Using polymorphism, App communicates with Domain using protocol defined inside Domain and implemented in Data layer. The implementation is hidden behind the polymorphism.
+
+### Contents of App
+
+Since App is the presentation layer of the application, it is the most framework-dependent layer, as it contains the UI and the event handlers of the UI. For each module, App defines Presenter, view and wireframe.
+
+- View
+    - Represents only the UI of the page. And depends on the presenter to handle events.
+- Presenter
+    - Communicate with interactor, handle successful response, completion or erroring.
+    - Provide data to view, and handle view events, deal with value binding. Also does some   
+      extra filtering.      
+- Wireframe
+    -
